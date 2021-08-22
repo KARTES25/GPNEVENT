@@ -495,7 +495,6 @@ html,body{
         border-radius: 50%;
     }
     &__popap{
-        width: 300px;
         height: 100vh;
         position: fixed;
         left: 0;
@@ -534,15 +533,6 @@ html,body{
             & iframe {
                 position: absolute;
                 border-radius: 20px;
-        &-close{
-            position: relative; 
-            float: right; 
-            margin-right: -50px;
-            margin-top: -40px;
-            height: 40px;
-            width: 40px;
-            background-image: url("../img/error1.png");
-        }
                 top:0;
                 left: 0;
                 width: 100%;
@@ -573,8 +563,12 @@ html,body{
         margin-right: 20px;
     }
 
-    &__image-cards{
-        display:none;
+    &__image-cards-active{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        height: 1100px;
+        overflow: hidden;
     }
 
     &__group{
@@ -583,9 +577,9 @@ html,body{
         width: 360px;
         height: 550px;
         &-img{
-            width: 360px;
+            width: 100%;
             height: auto;
-            margin-bottom: 20px;
+            margin-bottom: 24px;
         }
         &-title{
             font-family: Roboto;
@@ -595,17 +589,46 @@ html,body{
             line-height: 100%;
 
             color: #000000;
-            margin-bottom: 20px;
+            margin-bottom: 16px;
             margin-left: 20px;
             margin-right: 20px;
         }
+        &-title-mini{
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 100%;
+            margin-bottom: 32px;
+            margin-left: 20px;
+            margin-right: 20p
+        }
+
+        &-tex{
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 7;
+            -webkit-box-orient: vertical;
+            height: 10em;
+            margin-bottom: 32px;
+        }
         &-text{
+
             font-family: Roboto;
             font-style: normal;
             font-weight: normal;
             font-size: 16px;
             line-height: 110%;
-            margin-bottom: 20px;
+            margin-bottom: 32px;
+            margin-left: 20px;
+            margin-right: 20px;
+            color: rgba(0, 32, 51, 0.7);
+        }
+        &-text2{
+            font-size: 16px;
+            line-height: 110%;
+            margin-bottom: 32px;
             margin-left: 20px;
             margin-right: 20px;
             color: rgba(0, 32, 51, 0.7);
@@ -616,7 +639,7 @@ html,body{
             font-weight: normal;
             font-size: 14px;
             line-height: 100%;
-            margin-bottom: 20px;
+            margin-bottom: 24px;
             margin-left: 20px;
             margin-right: 20px;
             color: #60829A;
@@ -632,7 +655,7 @@ html,body{
             font-weight: normal;
             font-size: 16px;
             line-height: 120%;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             margin-left: 20px;
             margin-right: 20px;
             color: #3486E8;
@@ -641,6 +664,49 @@ html,body{
             border-radius: 40px;
             background: #f2f5f900;
             cursor: pointer;
+        }
+    }
+    &__popapim{
+
+        .list__group-tex{
+            overflow: auto;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            height: 20em;
+        }
+
+        height: 100vh;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index:9;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        display: none;
+        &-close{
+            position: relative; 
+            float: right; 
+            margin-right: -50px;
+            margin-top: -40px;
+            height: 40px;
+            width: 40px;
+            background-image: url("../img/error1.png");
+            border-radius: 50%;
+        }
+        &-close:hover{
+            cursor: pointer;
+            background-color: rgb(0, 0, 0);
+        }
+        &-container{
+            background: #FFFFFF;
+            border-radius: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 3%;
+            width: 30%;
+            height: 80%;
         }
     }
 }

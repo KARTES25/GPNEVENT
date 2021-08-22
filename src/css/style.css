@@ -448,7 +448,6 @@ html, body {
   transform: translate(15px, 11px);
 }
 .list__popap {
-  width: 300px;
   height: 100vh;
   position: fixed;
   left: 0;
@@ -493,15 +492,6 @@ html, body {
   width: 100%;
   height: 100%;
 }
-.list__popap-video iframe-close {
-  position: relative;
-  float: right;
-  margin-right: -50px;
-  margin-top: -40px;
-  height: 40px;
-  width: 40px;
-  background-image: url("../img/error1.png");
-}
 .list__card-title {
   font-family: Roboto;
   font-style: normal;
@@ -523,8 +513,12 @@ html, body {
   margin-left: 20px;
   margin-right: 20px;
 }
-.list__image-cards {
-  display: none;
+.list__image-cards-active {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 1100px;
+  overflow: hidden;
 }
 .list__group {
   background: #FAFBFF;
@@ -533,9 +527,9 @@ html, body {
   height: 550px;
 }
 .list__group-img {
-  width: 360px;
+  width: 100%;
   height: auto;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 .list__group-title {
   font-family: Roboto;
@@ -544,9 +538,28 @@ html, body {
   font-size: 20px;
   line-height: 100%;
   color: #000000;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   margin-left: 20px;
   margin-right: 20px;
+}
+.list__group-title-mini {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  margin-bottom: 32px;
+  margin-left: 20px;
+  margin-right: 20p;
+}
+.list__group-tex {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  height: 10em;
+  margin-bottom: 32px;
 }
 .list__group-text {
   font-family: Roboto;
@@ -554,7 +567,15 @@ html, body {
   font-weight: normal;
   font-size: 16px;
   line-height: 110%;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: rgba(0, 32, 51, 0.7);
+}
+.list__group-text2 {
+  font-size: 16px;
+  line-height: 110%;
+  margin-bottom: 32px;
   margin-left: 20px;
   margin-right: 20px;
   color: rgba(0, 32, 51, 0.7);
@@ -565,7 +586,7 @@ html, body {
   font-weight: normal;
   font-size: 14px;
   line-height: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   margin-left: 20px;
   margin-right: 20px;
   color: #60829A;
@@ -579,7 +600,7 @@ html, body {
   font-weight: normal;
   font-size: 16px;
   line-height: 120%;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   margin-left: 20px;
   margin-right: 20px;
   color: #3486E8;
@@ -588,6 +609,47 @@ html, body {
   border-radius: 40px;
   background: #f2f5f900;
   cursor: pointer;
+}
+.list__popapim {
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.list__popapim .list__group-tex {
+  overflow: auto;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  height: 20em;
+}
+.list__popapim-close {
+  position: relative;
+  float: right;
+  margin-right: -50px;
+  margin-top: -40px;
+  height: 40px;
+  width: 40px;
+  background-image: url("../img/error1.png");
+  border-radius: 50%;
+}
+.list__popapim-close:hover {
+  cursor: pointer;
+  background-color: black;
+}
+.list__popapim-container {
+  background: #FFFFFF;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  width: 30%;
+  height: 80%;
 }
 
 .text {
