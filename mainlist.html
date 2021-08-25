@@ -8,6 +8,7 @@
         <script src="src/JS/slider.js"></script>
         <script src="src/JS/schet.js"></script>
         <script src="src/JS/kard.js"></script>
+        <script src="src/JS/menu.js"></script>
 
         <title>GPNEVENT</title>
     </head>
@@ -16,29 +17,30 @@
             <div class="menu__item--mobile" onclick="openmob()">
                 <img id = "burg" src="src/img/menu.png">
             </div>
-            <div class="menu__item"><img id="logo" src="src/img/Group.png"></div>
-            <div class="menu__item--tablet"><a href="#" class="menu__link--mobile"><div><img src="src/img/vect.png" onclick="openm();"><img src="src/img/vect2.png" onclick="closem();"></div><span class="menu__button">Свернуть</span></a></div>
-            <div class="menu__item"><a href="#" class="menu__link"><div class="menu__link-icon"><img src="src/img/menu/1.png"></div> Главная</a></div>
-            <div class="menu__item"><a href="#" class="menu__link"><div class="menu__link-icon"><img src="src/img/menu/2.png"></div>Мой профиль</a></div>
-            <div class="menu__item"><a href="#" class="menu__link"><div class="menu__link-icon"><img src="src/img/menu/3.png"></div>Открытки</a></div>
-            <div class="menu__item"><a href="#" class="menu__link"><div class="menu__link-icon"><img src="src/img/menu/4.png"></div>Тайный санта</a></div>
-            <div class="menu__item"><a href="#" class="menu__link"><div class="menu__link-icon"><img src="src/img/menu/5.png"></div>Колесо удачи</a></div>
-            <div class="menu__item"><a href="#" class="menu__link"><div class="menu__link-icon"><img src="src/img/menu/6.png"></div>Квиз-драйв</a></div>
-            <div class="menu__item"><a href="#" class="menu__link"><div class="menu__link-icon"><img src="src/img/menu/7.png"></div>Лайфхаки</a></div>
-            <div class="menu__item active"><a href="mainlist.html" class="menu__link"><div class="menu__link-icon"><img src="src/img/menu/8.png"></div>Квест</a></div>
-            <div class="menu__item"><a href="#" class="menu__link"><div class="menu__link-icon"><img src="src/img/menu/9.png"></div>Предсказания</a></div>
-            <div class="menu__item"><a href="#" class="menu__link"><div class="menu__link-icon"><img src="src/img/menu/10.png"></div>Поле чудес</a></div>
-            <div class="menu__item"><a href="#" class="menu__link"><div class="menu__link-icon"><img src="src/img/menu/11.png"></div>Конкурс талантов</a></div>
-            <div class="menu__item"><a href="#" class="menu__link"><div class="menu__link-icon"><img src="src/img/menu/12.png"></div>Мастер-классы</a></div>
-            <div class="menu__item"><a href="#" class="menu__link"><div class="menu__link-icon"><img src="src/img/menu/13.png"></div>КВН в кругу друзей</a></div>
-            <div class="menu__item"><a href="#" class="menu__link"><div class="menu__link-icon"><img src="src/img/menu/14.png"></div>Новогоднее путешествие</a></div>
-            <div class="menu__item"><a href="#" class="menu__link"><div class="menu__link-icon"><img src="src/img/menu/15.png"></div>Сувенирная лавка</a></div>
+            <div class="menu__item menu__item--main"><img src="src/img/Group.png"></div>
+            <div class="menu__item menu__item--tablet"><img id="logo" src="src/img/Logo5.png"></div>
+            <div class="menu__item menu__item--tablet"><a class="menu__link menu__link--mobile"><div class="menu__link-icon logo1" onclick="openTabl()"><img src="src/img/vect.png"></div><div class="menu__link-icon logo2"><img src="src/img/vect2.png" onclick="closeTabl();"></div><span class="menu__button">Свернуть</span></a></div>
+            <div class="menu__item"><a href="#" class="menu__link"><div class="menu__link-icon"><img src="src/img/menu/1.png"></div><div class="menu__text">Главная</div></a></div>
+            <div class="menu__item"><a href="#" class="menu__link"><div class="menu__link-icon"><img src="src/img/menu/2.png"></div><div class="menu__text">Мой профиль</div></a></div>
+            <div class="menu__item"><a href="#" class="menu__link"><div class="menu__link-icon"><img src="src/img/menu/3.png"></div><div class="menu__text">Открытки</div></a></div>
+            <div class="menu__item"><a href="#" class="menu__link"><div class="menu__link-icon"><img src="src/img/menu/4.png"></div><div class="menu__text">Тайный санта</div></a></div>
+            <div class="menu__item"><a href="#" class="menu__link"><div class="menu__link-icon"><img src="src/img/menu/5.png"></div><div class="menu__text">Колесо удачи</div></a></div>
+            <div class="menu__item"><a href="#" class="menu__link"><div class="menu__link-icon"><img src="src/img/menu/6.png"></div><div class="menu__text">Квиз-драйв</div></a></div>
+            <div class="menu__item"><a href="#" class="menu__link"><div class="menu__link-icon"><img src="src/img/menu/7.png"></div><div class="menu__text">Лайфхаки</div></a></div>
+            <div class="menu__item active"><a href="mainlist.html" class="menu__link"><div class="menu__link-icon"><img src="src/img/menu/8.png"></div><div class="menu__text">Квест</div></a></div>
+            <div class="menu__item"><a href="#" class="menu__link"><div class="menu__link-icon"><img src="src/img/menu/9.png"></div><div class="menu__text">Предсказания</div></a></div>
+            <div class="menu__item"><a href="#" class="menu__link"><div class="menu__link-icon"><img src="src/img/menu/10.png"></div><div class="menu__text">Поле чудес</div></a></div>
+            <div class="menu__item"><a href="#" class="menu__link"><div class="menu__link-icon"><img src="src/img/menu/11.png"></div><div class="menu__text">Конкурс талантов</div></a></div>
+            <div class="menu__item"><a href="#" class="menu__link"><div class="menu__link-icon"><img src="src/img/menu/12.png"></div><div class="menu__text">Мастер-классы</div></a></div>
+            <div class="menu__item"><a href="#" class="menu__link"><div class="menu__link-icon"><img src="src/img/menu/13.png"></div><div class="menu__text">КВН в кругу друзей</div></a></div>
+            <div class="menu__item"><a href="#" class="menu__link"><div class="menu__link-icon"><img src="src/img/menu/14.png"></div><div class="menu__text">Новогоднее путешествие</div></a></div>
+            <div class="menu__item"><a href="#" class="menu__link"><div class="menu__link-icon"><img src="src/img/menu/15.png"></div><div class="menu__text">Сувенирная лавка</div></a></div>
             <div class="menu__separator"><img src="src/img/menu/Vector28.png"></div>
-            <div class="menu__item"><a href="#" class="menu__link"><div class="menu__link-icon"><img src="src/img/menu/16.png" class="menu__link-icon--mobile"></div>Нужна помошь?</a></div>
-            <div class="menu__item"><a href="#" class="menu__link"><div class="menu__link-icon"><img src="src/img/menu/17.png" class="menu__link-icon--mobile"></div>Контакты</a></div>
+            <div class="menu__item"><a href="#" class="menu__link"><div class="menu__link-icon"><img src="src/img/menu/16.png" class="menu__link-icon--mobile"></div><div class="menu__text">Нужна помощь?</div></a></div>
+            <div class="menu__item"><a href="#" class="menu__link"><div class="menu__link-icon"><img src="src/img/menu/17.png" class="menu__link-icon--mobile"></div><div class="menu__text">Контакты</div></a></div>
             <div class="menu__separator"><img src="src/img/menu/Vector28.png"></div>
-            <div class="menu__item"><a href="#" class="menu__link"><div class="menu__link-icon"><img src="src/img/menu/18.png" class="menu__link-icon--mobile"></div>Instagramи</a></div>
-            <div class="menu__item"><a href="#" class="menu__link"><div class="menu__link-icon"><img src="src/img/menu/19.png" class="menu__link-icon--mobile"></div>Telegram</a></div>
+            <div class="menu__item"><a href="#" class="menu__link"><div class="menu__link-icon"><img src="src/img/menu/18.png" class="menu__link-icon--mobile"></div><div class="menu__text">Instagramи</div></a></div>
+            <div class="menu__item"><a href="#" class="menu__link"><div class="menu__link-icon"><img src="src/img/menu/19.png" class="menu__link-icon--mobile"></div><div class="menu__text">Telegram</div></a></div>
         </div>
 
         <div class="logo">
@@ -201,8 +203,8 @@
                     <div class="list__sort">
                         Сортировать
                         <div class="list__sort-items">
-                            <div class="list__sort-item">Сначала новые</div>
-                            <div class="list__sort-item">Сначала старые</div>
+                            <div class="list__sort-item" onclick="sort1()">Сначала новые</div>
+                            <div class="list__sort-item" onclick="sort2()">Сначала старые</div>
                         </div>
                     </div>
                     <div class="list__popap">
@@ -223,235 +225,228 @@
                     </div>
                     <div class="list__cards">
                         <div class="list__video-cards">
-
-                            <div class="list__card">
-                                <div class="list__card-video">
-                                    <img class="list__card-img" src="https://img.youtube.com/vi/A261oNo4fLY/mqdefault.jpg">
-                                    <div class="list__card-play"><img src="src/img/play.png"></div>
+                            <div class="list__video">
+                                <div class="list__card">
+                                    <div class="list__card-video">
+                                        <img class="list__card-img" src="https://img.youtube.com/vi/A261oNo4fLY/mqdefault.jpg">
+                                        <div class="list__card-play"><img src="src/img/play.png"></div>
+                                    </div>
+                                    <div class="list__card-title">Скетч от команды “Веселые ребята</div>
+                                    <div class="list__card-text">Популярная церемония анонимного обмена подарками. Перед вами сайт для организации онлайн жеребьевки на Тайного Санту.</div>
                                 </div>
-                                <div class="list__card-title">Скетч от команды “Веселые ребята</div>
-                                <div class="list__card-text">Популярная церемония анонимного обмена подарками. Перед вами сайт для организации онлайн жеребьевки на Тайного Санту.</div>
-                            </div>
-                            <div class="list__card">
-                                <div class="list__card-video">
-                                    <img class="list__card-img" src="https://img.youtube.com/vi/UBKbLM7VbaE/mqdefault.jpg">
-                                    <div class="list__card-play"><img src="src/img/play.png"></div>
+                                <div class="list__card">
+                                    <div class="list__card-video">
+                                        <img class="list__card-img" src="https://img.youtube.com/vi/UBKbLM7VbaE/mqdefault.jpg">
+                                        <div class="list__card-play"><img src="src/img/play.png"></div>
+                                    </div>
+                                    <div class="list__card-title">Скетч от команды “Веселые ребята</div>
+                                    <div class="list__card-text">Популярная церемония анонимного обмена подарками. Перед вами сайт для организации онлайн жеребьевки на Тайного Санту.</div>
                                 </div>
-                                <div class="list__card-title">Скетч от команды “Веселые ребята</div>
-                                <div class="list__card-text">Популярная церемония анонимного обмена подарками. Перед вами сайт для организации онлайн жеребьевки на Тайного Санту.</div>
-                            </div>
-                            <div class="list__card">
-                                <div class="list__card-video">
-                                    <img class="list__card-img" src="https://img.youtube.com/vi/s83-9y3-dFo/mqdefault.jpg">
-                                    <div class="list__card-play"><img src="src/img/play.png"></div>
+                                <div class="list__card">
+                                    <div class="list__card-video">
+                                        <img class="list__card-img" src="https://img.youtube.com/vi/s83-9y3-dFo/mqdefault.jpg">
+                                        <div class="list__card-play"><img src="src/img/play.png"></div>
+                                    </div>
+                                    <div class="list__card-title">Скетч от команды “Веселые ребята</div>
+                                    <div class="list__card-text">Популярная церемония анонимного обмена подарками. Перед вами сайт для организации онлайн жеребьевки на Тайного Санту.</div>
                                 </div>
-                                <div class="list__card-title">Скетч от команды “Веселые ребята</div>
-                                <div class="list__card-text">Популярная церемония анонимного обмена подарками. Перед вами сайт для организации онлайн жеребьевки на Тайного Санту.</div>
-                            </div>
-                            <div class="list__card">
-                                <div class="list__card-video">
-                                    <img class="list__card-img" src="https://img.youtube.com/vi/Szc_amS2D88/mqdefault.jpg">
-                                    <div class="list__card-play"><img src="src/img/play.png"></div>
+                                <div class="list__card">
+                                    <div class="list__card-video">
+                                        <img class="list__card-img" src="https://img.youtube.com/vi/Szc_amS2D88/mqdefault.jpg">
+                                        <div class="list__card-play"><img src="src/img/play.png"></div>
+                                    </div>
+                                    <div class="list__card-title">Скетч от команды “Веселые ребята</div>
+                                    <div class="list__card-text">Популярная церемония анонимного обмена подарками. Перед вами сайт для организации онлайн жеребьевки на Тайного Санту.</div>
                                 </div>
-                                <div class="list__card-title">Скетч от команды “Веселые ребята</div>
-                                <div class="list__card-text">Популярная церемония анонимного обмена подарками. Перед вами сайт для организации онлайн жеребьевки на Тайного Санту.</div>
-                            </div>
-                            <div class="list__card">
-                                <div class="list__card-video">
-                                    <img class="list__card-img" src="https://img.youtube.com/vi/QVCdi5wRaAs/mqdefault.jpg">
-                                    <div class="list__card-play"><img src="src/img/play.png"></div>
+                                <div class="list__card">
+                                    <div class="list__card-video">
+                                        <img class="list__card-img" src="https://img.youtube.com/vi/QVCdi5wRaAs/mqdefault.jpg">
+                                        <div class="list__card-play"><img src="src/img/play.png"></div>
+                                    </div>
+                                    <div class="list__card-title">Скетч от команды “Веселые ребята</div>
+                                    <div class="list__card-text">Популярная церемония анонимного обмена подарками. Перед вами сайт для организации онлайн жеребьевки на Тайного Санту.</div>
                                 </div>
-                                <div class="list__card-title">Скетч от команды “Веселые ребята</div>
-                                <div class="list__card-text">Популярная церемония анонимного обмена подарками. Перед вами сайт для организации онлайн жеребьевки на Тайного Санту.</div>
-                            </div>
-                            <div class="list__card">
-                                <div class="list__card-video">
-                                    <img class="list__card-img" src="https://img.youtube.com/vi/eUsjFeK-jHs/mqdefault.jpg">
-                                    <div class="list__card-play"><img src="src/img/play.png"></div>
+                                <div class="list__card">
+                                    <div class="list__card-video">
+                                        <img class="list__card-img" src="https://img.youtube.com/vi/eUsjFeK-jHs/mqdefault.jpg">
+                                        <div class="list__card-play"><img src="src/img/play.png"></div>
+                                    </div>
+                                    <div class="list__card-title">Скетч от команды “Веселые ребята</div>
+                                    <div class="list__card-text">Популярная церемония анонимного обмена подарками. Перед вами сайт для организации онлайн жеребьевки на Тайного Санту.</div>
                                 </div>
-                                <div class="list__card-title">Скетч от команды “Веселые ребята</div>
-                                <div class="list__card-text">Популярная церемония анонимного обмена подарками. Перед вами сайт для организации онлайн жеребьевки на Тайного Санту.</div>
-                            </div>
-                            <div class="list__card">
-                                <div class="list__card-video">
-                                    <img class="list__card-img" src="https://img.youtube.com/vi/9GUJEngPpAU/mqdefault.jpg">
-                                    <div class="list__card-play"><img src="src/img/play.png"></div>
+                                <div class="list__card">
+                                    <div class="list__card-video">
+                                        <img class="list__card-img" src="https://img.youtube.com/vi/9GUJEngPpAU/mqdefault.jpg">
+                                        <div class="list__card-play"><img src="src/img/play.png"></div>
+                                    </div>
+                                    <div class="list__card-title">Скетч от команды “Веселые ребята</div>
+                                    <div class="list__card-text">Популярная церемония анонимного обмена подарками. Перед вами сайт для организации онлайн жеребьевки на Тайного Санту.</div>
                                 </div>
-                                <div class="list__card-title">Скетч от команды “Веселые ребята</div>
-                                <div class="list__card-text">Популярная церемония анонимного обмена подарками. Перед вами сайт для организации онлайн жеребьевки на Тайного Санту.</div>
-                            </div>
-                            <div class="list__card">
-                                <div class="list__card-video">
-                                    <img class="list__card-img" src="https://img.youtube.com/vi/qsb6mgBglYk/mqdefault.jpg">
-                                    <div class="list__card-play"><img src="src/img/play.png"></div>
+                                <div class="list__card">
+                                    <div class="list__card-video">
+                                        <img class="list__card-img" src="https://img.youtube.com/vi/qsb6mgBglYk/mqdefault.jpg">
+                                        <div class="list__card-play"><img src="src/img/play.png"></div>
+                                    </div>
+                                    <div class="list__card-title">Скетч от команды “Веселые ребята</div>
+                                    <div class="list__card-text">Популярная церемония анонимного обмена подарками. Перед вами сайт для организации онлайн жеребьевки на Тайного Санту.</div>
                                 </div>
-                                <div class="list__card-title">Скетч от команды “Веселые ребята</div>
-                                <div class="list__card-text">Популярная церемония анонимного обмена подарками. Перед вами сайт для организации онлайн жеребьевки на Тайного Санту.</div>
                             </div>
-
+                            <button class="list__more-btn list__more-card">ЗАГРУЗИТЬ ЕЩЕ</button>
                         </div>
 
                         <div class="list__image-cards">
-                            <div class="list__group">
-                                <img class="list__group-img" src="src/img/img.png">
-                                <div class="list__group-date">21.12.2020 18:00 МСК</div>
-                                <div class="list__group-tex">
-                                    <div class="list__group-title">Рождественский чайный домик</div>
-                                    <div class="list__group-text">Из самых обычных шерстяных ниток можно создавать оригинальные праздничные украшения и новогодние елочные игрушки. Нитки — это безопасный материал, с которым смогут работать даже дошкольники. Мы покажем вам несколько способов изготовления игрушек из шерстяных ниток.</div>
-                                    <div class="list__group-title-mini">Что нам понадобится?</div>
-                                    <div class="list__group-text">Для изготовления елочных игрушек из шерстяных ниток нам понадобятся простые подручные материалы:
-                                        <br><br>
-                                        - нитки,<br>
-                                        - шерстяные нити,<br>
-                                        - клей и картон,<br>
-                                        - проволока,<br>
-                                        - фурнитура для декора,<br>
-                                        - шнуры и ленты,<br>
-                                        - блестки и снежный спрей.<br>
+                            <div class="list__image">
+                                <div class="list__group">
+                                    <img class="list__group-img" src="src/img/img.png">
+                                    <div class="list__group-date">12.21.2020 18:00 МСК</div>
+                                    <div class="list__group-tex">
+                                        <div class="list__group-title">Рождественский чайный домик</div>
+                                        <div class="list__group-text">Из самых обычных шерстяных ниток можно создавать оригинальные праздничные украшения и новогодние елочные игрушки. Нитки — это безопасный материал, с которым смогут работать даже дошкольники. Мы покажем вам несколько способов изготовления игрушек из шерстяных ниток.</div>
+                                        <div class="list__group-title-mini">Что нам понадобится?</div>
+                                        <div class="list__group-text">Для изготовления елочных игрушек из шерстяных ниток нам понадобятся простые подручные материалы:
+                                            <br><br>
+                                            - нитки,<br>
+                                            - шерстяные нити,<br>
+                                            - клей и картон,<br>
+                                            - проволока,<br>
+                                            - фурнитура для декора,<br>
+                                            - шнуры и ленты,<br>
+                                            - блестки и снежный спрей.<br>
+                                        </div>
                                     </div>
+                                    <button class="list__group-open">Смотреть запись</button>
                                 </div>
-                                <button class="list__group-open">Смотреть запись</button>
-                            </div>
-                            <div class="list__group">
-                                <img class="list__group-img" src="src/img/img1.png">
-                                <div class="list__group-date">21.12.2020 18:00 МСК</div>
-                                <div class="list__group-tex">
-                                    <div class="list__group-title">Рождественский чайный домик</div>
-                                    <div class="list__group-text">Из самых обычных шерстяных ниток можно создавать оригинальные праздничные украшения и новогодние елочные игрушки. Нитки — это безопасный материал, с которым смогут работать даже дошкольники. Мы покажем вам несколько способов изготовления игрушек из шерстяных ниток.</div>
-                                    <div class="list__group-title-mini">Что нам понадобится?</div>
-                                    <div class="list__group-text">Для изготовления елочных игрушек из шерстяных ниток нам понадобятся простые подручные материалы:
-                                        <br><br>
-                                        - нитки,<br>
-                                        - шерстяные нити,<br>
-                                        - клей и картон,<br>
-                                        - проволока,<br>
-                                        - фурнитура для декора,<br>
-                                        - шнуры и ленты,<br>
-                                        - блестки и снежный спрей.<br>
+                                <div class="list__group">
+                                    <img class="list__group-img" src="src/img/img1.png">
+                                    <div class="list__group-date">12.22.2020 18:00 МСК</div>
+                                    <div class="list__group-tex">
+                                        <div class="list__group-title">Декор новогоднего носка</div>
+                                        <div class="list__group-text">Чайный домик для пакетиков чая — функциональный и удобный кухонный атрибут. </div>
                                     </div>
+                                    <button class="list__group-open">Смотреть запись</button>
                                 </div>
-                                <button class="list__group-open">Смотреть запись</button>
-                            </div>
-                            <div class="list__group">
-                                <img class="list__group-img" src="src/img/img2.png">
-                                <div class="list__group-date">21.12.2020 18:00 МСК</div>
-                                <div class="list__group-tex">
-                                    <div class="list__group-title">Рождественский чайный домик</div>
-                                    <div class="list__group-text">Из самых обычных шерстяных ниток можно создавать оригинальные праздничные украшения и новогодние елочные игрушки. Нитки — это безопасный материал, с которым смогут работать даже дошкольники. Мы покажем вам несколько способов изготовления игрушек из шерстяных ниток.</div>
-                                    <div class="list__group-title-mini">Что нам понадобится?</div>
-                                    <div class="list__group-text">Для изготовления елочных игрушек из шерстяных ниток нам понадобятся простые подручные материалы:
-                                        <br><br>
-                                        - нитки,<br>
-                                        - шерстяные нити,<br>
-                                        - клей и картон,<br>
-                                        - проволока,<br>
-                                        - фурнитура для декора,<br>
-                                        - шнуры и ленты,<br>
-                                        - блестки и снежный спрей.<br>
+                                <div class="list__group">
+                                    <img class="list__group-img" src="src/img/img2.png">
+                                    <div class="list__group-date">12.23.2020 18:00 МСК</div>
+                                    <div class="list__group-tex">
+                                        <div class="list__group-title">Елочная игрушка из цветных ниток</div>
+                                        <div class="list__group-text">Из самых обычных шерстяных ниток можно создавать оригинальные праздничные украшения и новогодние елочные игрушки. Нитки — это безопасный материал, с которым смогут работать даже дошкольники. Мы покажем вам несколько способов изготовления игрушек из шерстяных ниток.</div>
+                                        <div class="list__group-title-mini">Что нам понадобится?</div>
+                                        <div class="list__group-text">Для изготовления елочных игрушек из шерстяных ниток нам понадобятся простые подручные материалы:
+                                            <br><br>
+                                            - нитки,<br>
+                                            - шерстяные нити,<br>
+                                            - клей и картон,<br>
+                                            - проволока,<br>
+                                            - фурнитура для декора,<br>
+                                            - шнуры и ленты,<br>
+                                            - блестки и снежный спрей.<br>
+                                        </div>
                                     </div>
+                                    <button class="list__group-open">Смотреть запись</button>
                                 </div>
-                                <button class="list__group-open">Смотреть запись</button>
-                            </div>
-                            <div class="list__group">
-                                <img class="list__group-img" src="src/img/img.png">
-                                <div class="list__group-date">21.12.2020 18:00 МСК</div>
-                                <div class="list__group-tex">
-                                    <div class="list__group-title">Рождественский чайный домик</div>
-                                    <div class="list__group-text">Из самых обычных шерстяных ниток можно создавать оригинальные праздничные украшения и новогодние елочные игрушки. Нитки — это безопасный материал, с которым смогут работать даже дошкольники. Мы покажем вам несколько способов изготовления игрушек из шерстяных ниток.</div>
-                                    <div class="list__group-title-mini">Что нам понадобится?</div>
-                                    <div class="list__group-text">Для изготовления елочных игрушек из шерстяных ниток нам понадобятся простые подручные материалы:
-                                        <br><br>
-                                        - нитки,<br>
-                                        - шерстяные нити,<br>
-                                        - клей и картон,<br>
-                                        - проволока,<br>
-                                        - фурнитура для декора,<br>
-                                        - шнуры и ленты,<br>
-                                        - блестки и снежный спрей.<br>
+                                <div class="list__group">
+                                    <img class="list__group-img" src="src/img/img.png">
+                                    <div class="list__group-date">12.24.2020 18:00 МСК</div>
+                                    <div class="list__group-tex">
+                                        <div class="list__group-title">Елочная игрушка из лыка</div>
+                                        <div class="list__group-text">Из самых обычных шерстяных ниток можно создавать оригинальные праздничные украшения и новогодние елочные игрушки. Нитки — это безопасный материал, с которым смогут работать даже дошкольники. Мы покажем вам несколько способов изготовления игрушек из шерстяных ниток.</div>
+                                        <div class="list__group-title-mini">Что нам понадобится?</div>
+                                        <div class="list__group-text">Для изготовления елочных игрушек из шерстяных ниток нам понадобятся простые подручные материалы:
+                                            <br><br>
+                                            - нитки,<br>
+                                            - шерстяные нити,<br>
+                                            - клей и картон,<br>
+                                            - проволока,<br>
+                                            - фурнитура для декора,<br>
+                                            - шнуры и ленты,<br>
+                                            - блестки и снежный спрей.<br>
+                                        </div>
                                     </div>
+                                    <button class="list__group-open">Смотреть запись</button>
                                 </div>
-                                <button class="list__group-open">Смотреть запись</button>
-                            </div>
-                            <div class="list__group">
-                                <img class="list__group-img" src="src/img/img1.png">
-                                <div class="list__group-date">21.12.2020 18:00 МСК</div>
-                                <div class="list__group-tex">
-                                    <div class="list__group-title">Рождественский чайный домик</div>
-                                    <div class="list__group-text">Из самых обычных шерстяных ниток можно создавать оригинальные праздничные украшения и новогодние елочные игрушки. Нитки — это безопасный материал, с которым смогут работать даже дошкольники. Мы покажем вам несколько способов изготовления игрушек из шерстяных ниток.</div>
-                                    <div class="list__group-title-mini">Что нам понадобится?</div>
-                                    <div class="list__group-text">Для изготовления елочных игрушек из шерстяных ниток нам понадобятся простые подручные материалы:
-                                        <br><br>
-                                        - нитки,<br>
-                                        - шерстяные нити,<br>
-                                        - клей и картон,<br>
-                                        - проволока,<br>
-                                        - фурнитура для декора,<br>
-                                        - шнуры и ленты,<br>
-                                        - блестки и снежный спрей.<br>
+                                <div class="list__group">
+                                    <img class="list__group-img" src="src/img/img1.png">
+                                    <div class="list__group-date">12.25.2020 18:00 МСК</div>
+                                    <div class="list__group-tex">
+                                        <div class="list__group-title">Елочная игрушка из лампочки</div>
+                                        <div class="list__group-text">Из самых обычных шерстяных ниток можно создавать оригинальные праздничные украшения и новогодние елочные игрушки. Нитки — это безопасный материал, с которым смогут работать даже дошкольники. Мы покажем вам несколько способов изготовления игрушек из шерстяных ниток.</div>
+                                        <div class="list__group-title-mini">Что нам понадобится?</div>
+                                        <div class="list__group-text">Для изготовления елочных игрушек из шерстяных ниток нам понадобятся простые подручные материалы:
+                                            <br><br>
+                                            - нитки,<br>
+                                            - шерстяные нити,<br>
+                                            - клей и картон,<br>
+                                            - проволока,<br>
+                                            - фурнитура для декора,<br>
+                                            - шнуры и ленты,<br>
+                                            - блестки и снежный спрей.<br>
+                                        </div>
                                     </div>
+                                    <button class="list__group-open">Смотреть запись</button>
                                 </div>
-                                <button class="list__group-open">Смотреть запись</button>
-                            </div>
-                            <div class="list__group">
-                                <img class="list__group-img" src="src/img/img2.png">
-                                <div class="list__group-date">21.12.2020 18:00 МСК</div>
-                                <div class="list__group-tex">
-                                    <div class="list__group-title">Рождественский чайный домик</div>
-                                    <div class="list__group-text">Из самых обычных шерстяных ниток можно создавать оригинальные праздничные украшения и новогодние елочные игрушки. Нитки — это безопасный материал, с которым смогут работать даже дошкольники. Мы покажем вам несколько способов изготовления игрушек из шерстяных ниток.</div>
-                                    <div class="list__group-title-mini">Что нам понадобится?</div>
-                                    <div class="list__group-text">Для изготовления елочных игрушек из шерстяных ниток нам понадобятся простые подручные материалы:
-                                        <br><br>
-                                        - нитки,<br>
-                                        - шерстяные нити,<br>
-                                        - клей и картон,<br>
-                                        - проволока,<br>
-                                        - фурнитура для декора,<br>
-                                        - шнуры и ленты,<br>
-                                        - блестки и снежный спрей.<br>
+                                <div class="list__group">
+                                    <img class="list__group-img" src="src/img/img2.png">
+                                    <div class="list__group-date">12.26.2020 18:00 МСК</div>
+                                    <div class="list__group-tex">
+                                        <div class="list__group-title">Аксессуары для новогодней фотосессии</div>
+                                        <div class="list__group-text">Из самых обычных шерстяных ниток можно создавать оригинальные праздничные украшения и новогодние елочные игрушки. Нитки — это безопасный материал, с которым смогут работать даже дошкольники. Мы покажем вам несколько способов изготовления игрушек из шерстяных ниток.</div>
+                                        <div class="list__group-title-mini">Что нам понадобится?</div>
+                                        <div class="list__group-text">Для изготовления елочных игрушек из шерстяных ниток нам понадобятся простые подручные материалы:
+                                            <br><br>
+                                            - нитки,<br>
+                                            - шерстяные нити,<br>
+                                            - клей и картон,<br>
+                                            - проволока,<br>
+                                            - фурнитура для декора,<br>
+                                            - шнуры и ленты,<br>
+                                            - блестки и снежный спрей.<br>
+                                        </div>
                                     </div>
+                                    <button class="list__group-open">Смотреть запись</button>
                                 </div>
-                                <button class="list__group-open">Смотреть запись</button>
-                            </div>
-                            <div class="list__group">
-                                <img class="list__group-img" src="src/img/img.png">
-                                <div class="list__group-date">21.12.2020 18:00 МСК</div>
-                                <div class="list__group-tex">
-                                    <div class="list__group-title">Рождественский чайный домик</div>
-                                    <div class="list__group-text">Из самых обычных шерстяных ниток можно создавать оригинальные праздничные украшения и новогодние елочные игрушки. Нитки — это безопасный материал, с которым смогут работать даже дошкольники. Мы покажем вам несколько способов изготовления игрушек из шерстяных ниток.</div>
-                                    <div class="list__group-title-mini">Что нам понадобится?</div>
-                                    <div class="list__group-text">Для изготовления елочных игрушек из шерстяных ниток нам понадобятся простые подручные материалы:
-                                        <br><br>
-                                        - нитки,<br>
-                                        - шерстяные нити,<br>
-                                        - клей и картон,<br>
-                                        - проволока,<br>
-                                        - фурнитура для декора,<br>
-                                        - шнуры и ленты,<br>
-                                        - блестки и снежный спрей.<br>
+                                <div class="list__group">
+                                    <img class="list__group-img" src="src/img/img.png">
+                                    <div class="list__group-date">12.27.2020 18:00 МСК</div>
+                                    <div class="list__group-tex">
+                                        <div class="list__group-title">Елка</div>
+                                        <div class="list__group-text">Из самых обычных шерстяных ниток можно создавать оригинальные праздничные украшения и новогодние елочные игрушки. Нитки — это безопасный материал, с которым смогут работать даже дошкольники. Мы покажем вам несколько способов изготовления игрушек из шерстяных ниток.</div>
+                                        <div class="list__group-title-mini">Что нам понадобится?</div>
+                                        <div class="list__group-text">Для изготовления елочных игрушек из шерстяных ниток нам понадобятся простые подручные материалы:
+                                            <br><br>
+                                            - нитки,<br>
+                                            - шерстяные нити,<br>
+                                            - клей и картон,<br>
+                                            - проволока,<br>
+                                            - фурнитура для декора,<br>
+                                            - шнуры и ленты,<br>
+                                            - блестки и снежный спрей.<br>
+                                        </div>
                                     </div>
+                                    <button class="list__group-open">Смотреть запись</button>
                                 </div>
-                                <button class="list__group-open">Смотреть запись</button>
-                            </div>
-                            <div class="list__group">
-                                <img class="list__group-img" src="src/img/img1.png">
-                                <div class="list__group-date">21.12.2020 18:00 МСК</div>
-                                <div class="list__group-tex">
-                                    <div class="list__group-title">Рождественский чайный домик</div>
-                                    <div class="list__group-text">Из самых обычных шерстяных ниток можно создавать оригинальные праздничные украшения и новогодние елочные игрушки. Нитки — это безопасный материал, с которым смогут работать даже дошкольники. Мы покажем вам несколько способов изготовления игрушек из шерстяных ниток.</div>
-                                    <div class="list__group-title-mini">Что нам понадобится?</div>
-                                    <div class="list__group-text">Для изготовления елочных игрушек из шерстяных ниток нам понадобятся простые подручные материалы:
-                                        <br><br>
-                                        - нитки,<br>
-                                        - шерстяные нити,<br>
-                                        - клей и картон,<br>
-                                        - проволока,<br>
-                                        - фурнитура для декора,<br>
-                                        - шнуры и ленты,<br>
-                                        - блестки и снежный спрей.<br>
+                                <div class="list__group">
+                                    <img class="list__group-img" src="src/img/img1.png">
+                                    <div class="list__group-date">12.28.2020 18:00 МСК</div>
+                                    <div class="list__group-tex">
+                                        <div class="list__group-title">Дед мороз</div>
+                                        <div class="list__group-text">Из самых обычных шерстяных ниток можно создавать оригинальные праздничные украшения и новогодние елочные игрушки. Нитки — это безопасный материал, с которым смогут работать даже дошкольники. Мы покажем вам несколько способов изготовления игрушек из шерстяных ниток.</div>
+                                        <div class="list__group-title-mini">Что нам понадобится?</div>
+                                        <div class="list__group-text">Для изготовления елочных игрушек из шерстяных ниток нам понадобятся простые подручные материалы:
+                                            <br><br>
+                                            - нитки,<br>
+                                            - шерстяные нити,<br>
+                                            - клей и картон,<br>
+                                            - проволока,<br>
+                                            - фурнитура для декора,<br>
+                                            - шнуры и ленты,<br>
+                                            - блестки и снежный спрей.<br>
+                                        </div>
                                     </div>
+                                    <button class="list__group-open">Смотреть запись</button>
                                 </div>
-                                <button class="list__group-open">Смотреть запись</button>
                             </div>
+                            <button class="list__more-btn list__more-group">ЗАГРУЗИТЬ ЕЩЕ</button>
                         </div>
 
                     </div>
