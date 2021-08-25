@@ -9,10 +9,14 @@ $(document).ready(function(){
         let newURL = 'https://www.youtube.com/embed/' + dataURL;
         $('iframe','.list__popap-video').attr("src", newURL); 
         $(".list__popap").show();
+        let x=window.scrollX;
+        let y=window.scrollY;
+        window.onscroll=function(){window.scrollTo(x, y);};
     })
 
     $('.list__popap-close').click(function(){
         $(".list__popap").hide();
+        window.onscroll=function(){};
     })
 
     $('.list__subtitle-past').click(function(){
@@ -32,6 +36,9 @@ $(document).ready(function(){
     })
 
     $('.list__group-open').click(function(){
+        let x=window.scrollX;
+        let y=window.scrollY;
+        window.onscroll=function(){window.scrollTo(x, y);};
         $(".list__popapim").show();
         let main = $(this).parent();
         let main2 = $(".list__popapim-container");
@@ -43,6 +50,7 @@ $(document).ready(function(){
     })
 
     $('.list__popapim-close').click(function(){
+        window.onscroll=function(){};
         let main2 = $(".list__popapim-container");
         $(".list__group-date",main2).empty()
         $(".list__group-texts",main2).empty()

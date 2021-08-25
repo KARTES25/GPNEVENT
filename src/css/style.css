@@ -19,6 +19,7 @@ a:focus, a:active {
 }
 
 html, body {
+  position: sticky;
   height: 100%;
   width: 100%;
   font-size: 100%;
@@ -125,10 +126,17 @@ html, body {
 @media only screen and (min-width: 10px) and (max-width: 499px) {
   .menu {
     width: 100%;
+    height: 100vh;
     left: 0;
     top: 0;
     border-radius: 0;
     display: none;
+  }
+  .menu__item {
+    height: 32px;
+    margin-left: 16px;
+    align-items: center;
+    margin-right: 16px;
   }
 }
 @media only screen and (min-width: 500px) and (max-width: 1370px) {
@@ -178,6 +186,52 @@ html, body {
     top: 0;
     border-radius: 0;
     display: none;
+  }
+}
+
+.mobile-menu {
+  position: fixed;
+  z-index: 10;
+  height: 50px;
+  width: 100vw;
+  display: none;
+  background: #ffffff;
+}
+.mobile-menu__item {
+  display: flex;
+  height: 50px;
+  width: 100vw;
+}
+.mobile-menu__burger {
+  float: right;
+  background: #3486E8;
+  display: inline-block;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+.mobile-menu__burger-Active .mobile-menu__item-1 {
+  transform: rotate(-45deg) translate(-4px, 4px);
+}
+.mobile-menu__burger-Active .mobile-menu__item-2 {
+  opacity: 0;
+}
+.mobile-menu__burger-Active .mobile-menu__item-3 {
+  transform: rotate(45deg) translate(-4px, -4px);
+}
+.mobile-menu__item-1 {
+  margin-top: 18px;
+}
+.mobile-menu__item-1, .mobile-menu__item-2, .mobile-menu__item-3 {
+  background-color: #FFFFFF;
+  width: 22px;
+  height: 2px;
+  margin-left: 14px;
+  margin-bottom: 4px;
+}
+@media only screen and (min-width: 10px) and (max-width: 499px) {
+  .mobile-menu {
+    display: block;
   }
 }
 
@@ -242,8 +296,6 @@ html, body {
 .logo__btn {
   width: 240px;
   height: 56px;
-  left: 540px;
-  top: 546px;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -255,6 +307,20 @@ html, body {
   background: #C6103C;
   border-radius: 40px;
   color: #FFFFFF;
+}
+@media only screen and (min-width: 10px) and (max-width: 499px) {
+  .logo {
+    background-position-x: -400px;
+  }
+  .logo__title {
+    font-size: 42px;
+    line-height: 30px;
+    text-align: center;
+  }
+  .logo__btn {
+    display: block;
+    margin: auto;
+  }
 }
 
 .item-about__icon {
@@ -285,6 +351,29 @@ html, body {
 .item-about__text {
   color: #333333;
 }
+@media only screen and (min-width: 10px) and (max-width: 499px) {
+  .item-about__icon {
+    width: 300px;
+    height: 270px;
+  }
+}
+
+.item-top {
+  top: -40px;
+  position: relative;
+}
+.item-top-left {
+  position: absolute;
+  left: -10px;
+}
+.item-top-center {
+  position: absolute;
+  right: 0;
+}
+.item-top-right {
+  position: absolute;
+  right: 0;
+}
 
 .about__title {
   color: #1B4698;
@@ -294,6 +383,11 @@ html, body {
   flex-wrap: wrap;
   font-size: 0;
   margin: 0px -15px;
+}
+@media only screen and (min-width: 10px) and (max-width: 499px) {
+  .about__row {
+    justify-content: center;
+  }
 }
 .about__column {
   padding: 0px 15px;
@@ -340,6 +434,7 @@ html, body {
   opacity: 0.5;
 }
 .countdown__title {
+  margin-top: 40px;
   padding-top: 90px;
   color: #FFFFFF;
 }
@@ -350,8 +445,6 @@ html, body {
   margin-top: 60px;
   width: 240px;
   height: 56px;
-  left: 540px;
-  top: 546px;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -364,6 +457,12 @@ html, body {
   border-radius: 40px;
   color: #FFFFFF;
   margin-bottom: 100px;
+}
+@media only screen and (min-width: 10px) and (max-width: 499px) {
+  .countdown__item {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
 }
 
 .video__iframe {
@@ -381,6 +480,7 @@ html, body {
   height: 100%;
 }
 .video__title {
+  margin-top: 120px;
   color: #1B4698;
 }
 
@@ -388,7 +488,11 @@ html, body {
   display: block;
 }
 .slaider__title {
+  margin-top: 120px;
   color: #1B4698;
+}
+.slaider__text {
+  margin-top: 32px;
 }
 .slaider__image {
   width: 100%;
@@ -447,12 +551,21 @@ html, body {
 .slaider__nav-active {
   background: #FFFFFF;
 }
+@media only screen and (min-width: 10px) and (max-width: 499px) {
+  .slaider__btn-previous {
+    left: 10px;
+  }
+  .slaider__btn-next {
+    right: 10px;
+  }
+}
 
 .noActive {
   opacity: 0.7;
 }
 
 .list__title {
+  margin-top: 160px;
   color: #1B4698;
 }
 .list__subtitle-actual, .list__subtitle-past {
@@ -530,6 +643,12 @@ html, body {
   border-radius: 40px;
   color: #3297FF;
 }
+@media only screen and (min-width: 10px) and (max-width: 499px) {
+  .list__more-btn {
+    position: relative;
+    margin-left: 10%;
+  }
+}
 .list__video {
   display: flex;
   flex-wrap: wrap;
@@ -540,6 +659,11 @@ html, body {
 .list__video .list__card:nth-child(3n) {
   margin-right: 0;
 }
+@media only screen and (min-width: 10px) and (max-width: 499px) {
+  .list__video {
+    justify-content: center;
+  }
+}
 .list__card {
   margin-right: 40px;
   margin-bottom: 40px;
@@ -547,6 +671,11 @@ html, body {
   border-radius: 12px;
   width: 360px;
   height: 408px;
+}
+@media only screen and (min-width: 10px) and (max-width: 499px) {
+  .list__card {
+    margin-right: 0;
+  }
 }
 .list__card-video {
   cursor: pointer;
@@ -607,6 +736,11 @@ html, body {
   margin-top: 3%;
   width: 70%;
 }
+@media only screen and (min-width: 10px) and (max-width: 499px) {
+  .list__popap-container {
+    margin-top: 40%;
+  }
+}
 .list__popap-video {
   position: relative;
   padding-bottom: 56.25%;
@@ -652,6 +786,11 @@ html, body {
 .list__image .list__group:nth-child(1n+7) {
   display: none;
 }
+@media only screen and (min-width: 10px) and (max-width: 499px) {
+  .list__image {
+    justify-content: center;
+  }
+}
 .list__group {
   background: #FAFBFF;
   border-radius: 12px;
@@ -659,6 +798,14 @@ html, body {
   height: 550px;
   margin-right: 40px;
   margin-bottom: 40px;
+}
+@media only screen and (min-width: 10px) and (max-width: 499px) {
+  .list__group {
+    width: 300px;
+    height: 490px;
+    margin-bottom: 40px;
+    margin-right: 0;
+  }
 }
 .list__group-img {
   width: 100%;
@@ -744,6 +891,13 @@ html, body {
   background: #f2f5f900;
   cursor: pointer;
 }
+@media only screen and (min-width: 10px) and (max-width: 499px) {
+  .list__group-open {
+    width: 290px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
 .list__popapim {
   height: 100vh;
   position: fixed;
@@ -774,6 +928,9 @@ html, body {
   border-radius: 10px;
   background-color: #ffffff;
 }
+.list__popapim .body {
+  overflow: hidden;
+}
 .list__popapim-close {
   position: relative;
   float: right;
@@ -797,6 +954,13 @@ html, body {
   width: 30%;
   height: 80%;
 }
+@media only screen and (min-width: 10px) and (max-width: 499px) {
+  .list__popapim-container {
+    margin-top: 100px;
+    width: 80%;
+    height: 70%;
+  }
+}
 
 .text {
   font-family: Segoe UI;
@@ -817,4 +981,9 @@ html, body {
   line-height: 100%;
   margin-bottom: 40px;
   text-align: center;
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
 }

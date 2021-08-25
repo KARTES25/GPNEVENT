@@ -13,10 +13,19 @@
         <title>GPNEVENT</title>
     </head>
     <body>
-        <div class="menu">
-            <div class="menu__item--mobile" onclick="openmob()">
-                <img id = "burg" src="src/img/menu.png">
+        <div class="mobile-menu">
+            <div class="mobile-menu_item">
+
+                <img src="src/img/Group.png">
+                <div class="mobile-menu__burger" onclick="mobile(this)">
+                    <div class="mobile-menu__item-1"></div>
+                    <div class="mobile-menu__item-2"></div>
+                    <div class="mobile-menu__item-3"></div>
+                </div>
             </div>
+        </div>
+        <div class="menu">
+
             <div class="menu__item menu__item--main"><img src="src/img/Group.png"></div>
             <div class="menu__item menu__item--tablet"><img id="logo" src="src/img/Logo5.png"></div>
             <div class="menu__item menu__item--tablet"><a class="menu__link menu__link--mobile"><div class="menu__link-icon logo1" onclick="openTabl()"><img src="src/img/vect.png"></div><div class="menu__link-icon logo2"><img src="src/img/vect2.png" onclick="closeTabl();"></div><span class="menu__button">Свернуть</span></a></div>
@@ -69,7 +78,15 @@
                         <div class="about__column">
                             <div class="item-about">
                                 <div class="item-about__icon">
+                                    <!-- <div class="item-top">
+                                        <img class="item-top-left" src="src/img/sneg/1-1.png">
+                                        <img class="item-top-center" src="src/img/sneg/1-2.png">
+                                        <img class="item-top-right" src="src/img/sneg/1-3.png">
+                                    </div> -->
                                     <img src="src/img/Frame1.png">
+                                    <div class="item-bottom">
+                                        
+                                    </div>
                                 </div>
                                 <div class="item-about__title">Новосибирск</div>
                                 <div class="item-about__text text">Ул. Семьи Шамшиных, 45Б, офис 230, начало квеста. О дальнейших локациях вам сообщат ведущие.</div>
