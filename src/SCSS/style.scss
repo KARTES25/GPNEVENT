@@ -294,6 +294,8 @@ html,body{
     }
 
     &__btn{
+        cursor: pointer;
+        display: flex;
         width: 240px;
         height: 56px;
         font-family: Roboto;
@@ -306,8 +308,30 @@ html,body{
         text-transform: uppercase;
         background: #C6103C;
         border-radius: 40px;
+        border: solid 6px;
+        border-color: #C6103C;;
         
         color: #FFFFFF;
+        &-left{
+            border-bottom-left-radius:40px;
+            border-top-left-radius:40px;
+            height: 44px;
+            width: 22px;
+            background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.46) 100%);;
+            opacity: 0.3;
+        }
+        &-center{
+            width: 196px;
+        }
+        &-right{
+            height: 44px;
+            border-bottom-left-radius:40px;
+            border-top-left-radius:40px;
+            width: 22px;
+            background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.46) 100%);
+            transform: rotate(-180deg);
+            opacity: 0.3;
+        }
         
     }
     @media only screen and (min-width: 10px) and (max-width: 499px){
@@ -319,8 +343,7 @@ html,body{
 
         }
         &__btn{
-            display:block;
-            margin:auto;
+            margin:0 auto;
         }
 
     }
@@ -407,6 +430,7 @@ html,body{
         display: flex;
         justify-content: center;
         text-align: center;
+        margin-bottom: 60px;
     }
 
     &__top{
@@ -414,6 +438,7 @@ html,body{
     }
 
     &__bottom{
+        margin-top: 60px;
         margin-bottom: 0;
         padding-bottom: 0;
         width: 100%;
@@ -456,11 +481,11 @@ html,body{
     }
 
     &__btn{
-        margin-top: 60px;
-
+        cursor: pointer;
+        margin:0 auto;
+        display: flex;
         width: 240px;
         height: 56px;
-        
         font-family: Roboto;
         font-style: normal;
         font-weight: bold;
@@ -471,9 +496,31 @@ html,body{
         text-transform: uppercase;
         background: #3297FF;
         border-radius: 40px;
+        border: solid 6px;
+        border-color: #3297FF;
         
         color: #FFFFFF;
-        margin-bottom: 100px;
+        &-left{
+            border-bottom-left-radius:40px;
+            border-top-left-radius:40px;
+            height: 44px;
+            width: 22px;
+            background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.46) 100%);;
+            opacity: 0.3;
+        }
+        &-center{
+            width: 196px;
+        }
+        &-right{
+            height: 44px;
+            border-bottom-left-radius:40px;
+            border-top-left-radius:40px;
+            width: 22px;
+            background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.46) 100%);
+            transform: rotate(-180deg);
+            opacity: 0.3;
+        }
+        
     }
     @media only screen and (min-width: 10px) and (max-width: 499px){
         &__item{

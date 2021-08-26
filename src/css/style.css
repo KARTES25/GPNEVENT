@@ -294,6 +294,8 @@ html, body {
   opacity: 0.8;
 }
 .logo__btn {
+  cursor: pointer;
+  display: flex;
   width: 240px;
   height: 56px;
   font-family: Roboto;
@@ -306,7 +308,29 @@ html, body {
   text-transform: uppercase;
   background: #C6103C;
   border-radius: 40px;
+  border: solid 6px;
+  border-color: #C6103C;
   color: #FFFFFF;
+}
+.logo__btn-left {
+  border-bottom-left-radius: 40px;
+  border-top-left-radius: 40px;
+  height: 44px;
+  width: 22px;
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.46) 100%);
+  opacity: 0.3;
+}
+.logo__btn-center {
+  width: 196px;
+}
+.logo__btn-right {
+  height: 44px;
+  border-bottom-left-radius: 40px;
+  border-top-left-radius: 40px;
+  width: 22px;
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.46) 100%);
+  transform: rotate(-180deg);
+  opacity: 0.3;
 }
 @media only screen and (min-width: 10px) and (max-width: 499px) {
   .logo {
@@ -318,8 +342,7 @@ html, body {
     text-align: center;
   }
   .logo__btn {
-    display: block;
-    margin: auto;
+    margin: 0 auto;
   }
 }
 
@@ -402,11 +425,13 @@ html, body {
   display: flex;
   justify-content: center;
   text-align: center;
+  margin-bottom: 60px;
 }
 .countdown__top {
   width: 100%;
 }
 .countdown__bottom {
+  margin-top: 60px;
   margin-bottom: 0;
   padding-bottom: 0;
   width: 100%;
@@ -442,7 +467,9 @@ html, body {
   color: #FFFFFF;
 }
 .countdown__btn {
-  margin-top: 60px;
+  cursor: pointer;
+  margin: 0 auto;
+  display: flex;
   width: 240px;
   height: 56px;
   font-family: Roboto;
@@ -455,8 +482,29 @@ html, body {
   text-transform: uppercase;
   background: #3297FF;
   border-radius: 40px;
+  border: solid 6px;
+  border-color: #3297FF;
   color: #FFFFFF;
-  margin-bottom: 100px;
+}
+.countdown__btn-left {
+  border-bottom-left-radius: 40px;
+  border-top-left-radius: 40px;
+  height: 44px;
+  width: 22px;
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.46) 100%);
+  opacity: 0.3;
+}
+.countdown__btn-center {
+  width: 196px;
+}
+.countdown__btn-right {
+  height: 44px;
+  border-bottom-left-radius: 40px;
+  border-top-left-radius: 40px;
+  width: 22px;
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.46) 100%);
+  transform: rotate(-180deg);
+  opacity: 0.3;
 }
 @media only screen and (min-width: 10px) and (max-width: 499px) {
   .countdown__item {
